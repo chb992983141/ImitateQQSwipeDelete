@@ -10,13 +10,61 @@
     <ImageView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/head_1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#99000000"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="名称"
+                android:id="@+id/tv_title"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#99000000"
+                android:textSize="14sp"
+                android:id="@+id/tv_date"
+                android:text="名称"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <com.duff.ImitateQQSwipeDelete.FocusTextView android:layout_width="match_parent"
+                                                     android:layout_height="0dp"
+                                                     android:layout_weight="1"
+                                                     android:gravity="center_vertical"
+                                                     android:textColor="#99000000"
+                                                     android:padding="3dp"
+                                                     android:id="@+id/tv_name"
+                                                     android:layout_marginLeft="10dp"
+                                                     android:textSize="16sp"
+                                                     android:singleLine="true"
+                                                     android:ellipsize="marquee"
+                                                     android:text="名称"/>
+
+
+    </LinearLayout>
     
-    <TextView android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#99000000"
-        android:id="@+id/tv_name"
-        android:layout_marginLeft="10dp"
-        android:textSize="20sp"
-        android:text="名称"/>
+
 
 </LinearLayout>

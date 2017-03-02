@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:textSize="18sp"
         android:textColor="#ffffff"
+              android:id="@+id/tv_call"
         android:gravity="center"
         android:background="#aa000000"
         android:text="Call"/>

@@ -2,9 +2,12 @@ package com.duff.ImitateQQSwipeDelete;
 
 public class SwipeLayoutManager {
 	private SwipeLayoutManager(){}
-	private static SwipeLayoutManager mInstance = new SwipeLayoutManager();
+	private static SwipeLayoutManager mInstance = null;
 	
 	public static SwipeLayoutManager getInstance(){
+		if (mInstance == null) {
+			mInstance = new SwipeLayoutManager();
+		}
 		return mInstance;
 	}
 	
